@@ -1,4 +1,4 @@
-const Block = require("./Block");
+const Block = require("./block");
 const Blockchain = require("./Blockchain");
 
 console.log("====区块链测试开始========");

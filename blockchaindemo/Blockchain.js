@@ -1,4 +1,4 @@
-const Block = require("./Block");
+const Block = require("./block");
 const crypto = require("crypto");
 class Blockchain {
   //初始化一个新的区块链
@@ -110,8 +110,8 @@ class Blockchain {
     }
     const tempChain = [chain[0]];
     for (let i = 1; i < chain.length; i++) {
-      if (thiis.isVaildNextBlock(chain[i], tempChain[i - 1])) {
-        tempChain.push;
+      if (this.isVaildNextBlock(chain[i], tempChain[i - 1])) {
+        tempChain.push(chain[i]);
       } else {
         return false;
       }
